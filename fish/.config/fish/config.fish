@@ -51,8 +51,8 @@ alias mnc='mpv --cache=no'
 
 #abbreviations
 abbr gco 'git checkout'
-abbr gct 'git commit -m'
-abbr gpl 'git pull origin'
+abbr gcm 'git commit -m'
+abbr gpl 'git pull'
 abbr gps 'git push'
 abbr gss 'git status'
 abbr fd 'cd "$(fd --type d --hidden --follow | fzf)"'

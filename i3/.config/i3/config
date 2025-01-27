@@ -75,8 +75,14 @@ exec --no-startup-id flatpak run org.telegram.desktop
 # WhatsAppDesktop on start
 exec --no-startup-id io.github.mimbrero.WhatsAppDesktop
 
+# copyq (clipboard manager)
+exec --no-startup-id copyq
+
 # make screenshots
 bindsym Print exec --no-startup-id flameshot gui
+
+# make screenshots
+exec --no-startup-id xfce4-power-manager
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -297,23 +303,23 @@ bar {
 # exec_always --no-startup-id ~/.config/polybar/launch.sh
 
  # Define colors variables:
-set $darkbluetrans	#08052b
-set $darkblue		#08052b
-set $lightblue		#5294e2
-set $urgentred		#e53935
-set $white		#ffffff
-set $black		#000000
-set $purple		#e345ff
-set $darkgrey		#383c4a
-set $grey		#b0b5bd
-set $mediumgrey		#8b8b8b
-set $yellowbrown	#e1b700
+# set $darkbluetrans	#08052b
+# set $darkblue		#08052b
+# set $lightblue		#5294e2
+# set $urgentred		#e53935
+# set $white		#ffffff
+# set $black		#000000
+# set $purple		#e345ff
+# set $darkgrey		#383c4a
+# set $grey		#b0b5bd
+# set $mediumgrey		#8b8b8b
+# set $yellowbrown	#e1b700
 
 # define colors for windows:
 #class		        	border		bground		text		indicator	child_border
-client.focused		    	$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
-client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	$darkgrey
-client.focused_inactive		$darkblue	$darkblue	$grey		$black		$black
-client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown      
+# client.focused		  #0d6143 	
+# client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	$darkgrey
+# client.focused_inactive		$darkblue	$darkblue	$grey		$black		$black
+# client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown      
 
 
