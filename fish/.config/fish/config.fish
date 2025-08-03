@@ -22,7 +22,7 @@ alias h='htop'
 alias v='vifm'
 alias c='cmus'
 alias clean='sudo dnf autoremove && dnf clean all && flatpak uninstall --unused -y && flatpak remove --delete-data && sudo journalctl --vacuum-time=2weeks'
-alias k='sudo ./kmonad ~/.config/kmonad/config.kbd'
+alias k='sudo kmonad ~/.config/kmonad/config.kbd'
 alias b='btop'
 alias lg='lazygit'
 alias up='cd ..'
@@ -33,7 +33,12 @@ alias n='nvim'
 alias pbcopy='xsel --input --clipboard'
 alias pbpaste='xsel --output --clipboard'
 alias size='du -h --max-depth=1 | sort -rh'
-alias z='zathura'
+alias za='zathura'
+alias ya='yazi'
+
+# aliases for docker
+alias ds='sudo systemctl start docker.socket && sudo systemctl start docker'
+alias dx='sudo systemctl stop docker.socket && sudo systemctl stop docker'
 
 # starship
 starship init fish | source
@@ -59,6 +64,10 @@ abbr fd 'cd "$(fd --type d --hidden --follow | fzf)"'
 
 #fzf integration (keybindings)
 fzf --fish | source
+
+# zoxide integration
+zoxide init fish | source
+
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/lucia/Yura/google-cloud/google-cloud-sdk/path.fish.inc' ]
